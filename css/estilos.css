@@ -1,0 +1,68 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.padre {
+}
+
+.padre .header {
+  background: #000;
+}
+
+.padre .header .menu {
+  background: #2d4059;
+}
+
+.padre .header .menu .logo {
+  background: #ea5455;
+}
+
+.padre .header .menu .nav {
+  background: #ea5455;
+}
+
+.padre .header .menu .social {
+  background: #ea5455;
+}
+
+.padre .header .texto-principal {
+  background: #f07b3f;
+}
+
+.padre .header .texto-principal h1 {
+  background: #ffd460;
+}
+
+.padre .section {
+  background: #000;
+}
+
+.padre .section .articulos {
+  background: #4e4e6a;
+}
+
+.padre .section .articulos .article {
+  background: #1f6cb0;
+}
+
+.padre .section .articulos .navegacion {
+  background: #70a3c4;
+}
+
+.padre .section .aside {
+  background: #f73f52;
+}
+
+.padre .section .aside .publicidad {
+  background: #ff3a85;
+}
+
+.padre .footer {
+  background: #000;
+}
+
+.padre .footer .pie {
+  background: #e6afe2;
+}
