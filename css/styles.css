@@ -1,0 +1,226 @@
+body {
+  font-family: 'Montserrat', serif;
+  --font-color: #fbfbfb;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column
+}
+
+/********
+* Header
+*********/
+
+div.container>header {
+  background-image: url("../img/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div.container>header a {
+  color: var(--font-color);
+}
+
+div.container>header>div.logo-menu-social {
+  background-color: rgba(51, 51, 51, .1);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+div.container>header>div.logo-menu-social>div.logo>a {
+  font-size: 1.875rem;
+  text-decoration: none;
+}
+
+div.container>header>div.logo-menu-social>nav.menu {
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+div.container>header>div.logo-menu-social i.fa {
+  font-size: 1.3rem;
+}
+
+div.container>header>div.logo-menu-social>nav.menu>a {
+  margin: 0 1vw;
+  text-decoration: none;
+  text-align: center;
+}
+
+div.container>header>div.logo-menu-social>div.social {
+  display: flex;
+  align-items: center;
+}
+
+div.container>header>div.logo-menu-social>div.social>a {
+  padding: 0 0.3rem;
+}
+
+/********
+* Banner
+*********/
+
+div.container>header>div.banner {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+
+  padding: 27vh 5vw;
+}
+
+div.container>header>div.banner>h1 {
+  font-size: calc(0.8rem + 0.8vw);
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+
+div.container>main {
+  display: flex;
+  flex-direction: row;
+}
+
+/**********
+* Articles
+***********/
+
+div.container>main>section.articles {
+  margin: 1vw 0;
+  color: #000000;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.container>main>section.articles>article {
+  flex-basis: 45%;
+  margin: 0 0.5vw;
+}
+
+div.container>main>section.articles>article>img {
+  width: 100%;
+  height: auto;
+}
+
+div.container>main>section.articles>article>div.data-articles {
+  position: relative;
+  top: -65px;
+  color: #ffffff;
+  background-color: rgba(36, 35, 35, 0.5);
+  padding: 0 1vw;
+}
+
+div.container>main>section.articles>article>p {
+  position: relative;
+  top: -60px;
+}
+
+div.container>main>section.articles>article>a {
+  position: relative;
+  top: -40px;
+}
+
+div.container>main>section.articles>article>a {
+  text-decoration: none;
+  background-color: #000;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem;
+}
+
+/*******
+* Aside
+********/
+
+div.container>main>aside {
+  margin-top: 1rem;
+  color: #000000;
+  flex: 1 1 100%;
+  padding-right: 3%;
+}
+
+div.container>main>aside>div.ads {
+  margin-bottom: 1rem;
+}
+
+div.container>main>aside>div.ads>h4 {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/*****************
+* Articles Navbar
+******************/
+
+div.container>main>section.articles>nav.article-menu {
+  background-color: #000;
+  flex-basis: 100%;
+  padding: 1vh 1vw;
+  margin: 0 4%;
+}
+
+div.container>main>section.articles>nav.article-menu>a {
+  color: #fff;
+  margin-right: 2vw;
+  text-decoration: none;
+}
+
+div.container>footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 1vh;
+  padding: 1vh 0;
+  font-size: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  div.container>main {
+    flex-direction: column;
+  }
+
+  div.container>main>aside {
+    display: flex;
+    padding: 4%;
+  }
+
+  div.container>main>aside>div.ads:nth-child(2) {
+    padding: 0 1%;
+  }
+}
+
+@media (max-width: 800px) {
+  div.container>header>div.logo-menu-social,
+  div.container>main>section.articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.container>header>div.logo-menu-social > div {
+    padding: 3% 0;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 14px;
+  }
+  div.container>header>div.logo-menu-social>nav.menu span.off {
+    display: none;
+  }
+  div.container>header>div.logo-menu-social>nav.menu i.fa {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+}

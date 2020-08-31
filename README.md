@@ -1,2 +1,3 @@
-# Plantilla_Front_2020
-Plantilla para proyectos de FrontEnd = HMLT5 + CSS3 + SASS + JAVASCRIPT
+# Layout de un sitio web empresarial
+
+Práctica de flexbox que consiste en hacer el layout de un sitio web de apariencia empresarial adaptable.
